@@ -31,7 +31,7 @@ export default function WhyTestSlide() {
           <p className="text-white/70 italic">
             &quot;Write a failing test that exposes the bug. When you fix it and the test passes, the bug is fixed forever.&quot;
           </p>
-          <cite className="text-white/40 text-sm mt-2 block">— React Native Docs</cite>
+          <cite className="text-white/40 text-sm mt-2 block">React Native Docs</cite>
         </blockquote>
       </div>
     </div>

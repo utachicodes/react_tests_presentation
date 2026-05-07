@@ -64,15 +64,15 @@ export default function ResourcesSlide() {
         <div className="grid md:grid-cols-3 gap-4 mb-8">
           <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-center">
             <p className="text-2xl font-bold text-emerald-400 mb-1">Unit</p>
-            <p className="text-white/50 text-sm">Jest · Fast · Isolated</p>
+            <p className="text-white/50 text-sm">Jest, Fast, Isolated</p>
           </div>
           <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl text-center">
             <p className="text-2xl font-bold text-blue-400 mb-1">Integration</p>
-            <p className="text-white/50 text-sm">RNTL · Components · Interactions</p>
+            <p className="text-white/50 text-sm">RNTL, Components, Interactions</p>
           </div>
           <div className="p-4 bg-orange-500/10 border border-orange-500/30 rounded-xl text-center">
             <p className="text-2xl font-bold text-orange-400 mb-1">E2E</p>
-            <p className="text-white/50 text-sm">Maestro · Real device · Full flows</p>
+            <p className="text-white/50 text-sm">Maestro, Real device, Full flows</p>
           </div>
         </div>
 
