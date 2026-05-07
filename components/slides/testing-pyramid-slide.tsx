@@ -83,7 +83,7 @@ export default function TestingPyramidSlide() {
         <div className="flex gap-8 items-start">
 
           {/* Left axis label */}
-          <div className="hidden md:flex flex-col items-center justify-center gap-1 self-center h-48 shrink-0">
+          <div className="hidden md:flex flex-col items-center justify-center self-center h-48 shrink-0">
             <span className="text-white/25 text-xs rotate-[-90deg] whitespace-nowrap tracking-widest">FEWER · SLOWER · EXPENSIVE</span>
           </div>
 
@@ -120,7 +120,7 @@ export default function TestingPyramidSlide() {
           </div>
 
           {/* Right axis label */}
-          <div className="hidden md:flex flex-col items-center justify-center gap-1 self-center h-48 shrink-0">
+          <div className="hidden md:flex flex-col items-center justify-center self-center h-48 shrink-0">
             <span className="text-white/25 text-xs rotate-90 whitespace-nowrap tracking-widest">MORE · FASTER · CHEAPER</span>
           </div>
 
@@ -163,9 +163,9 @@ export default function TestingPyramidSlide() {
 
         {/* Ratio bar */}
         <div className="mt-6 flex rounded-xl overflow-hidden h-3">
-          <div className="bg-emerald-500 flex-[70] transition-all" title="Unit 70%" />
-          <div className="bg-blue-500 flex-[20] transition-all" title="Integration 20%" />
-          <div className="bg-orange-500 flex-[10] transition-all" title="E2E 10%" />
+          <div className="bg-emerald-500 flex-[70]" title="Unit 70%" />
+          <div className="bg-blue-500 flex-[20]" title="Integration 20%" />
+          <div className="bg-orange-500 flex-[10]" title="E2E 10%" />
         </div>
         <div className="flex justify-between mt-1.5 text-xs text-white/30">
           <span>Unit 70%</span>
