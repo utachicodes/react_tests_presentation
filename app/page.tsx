@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import TitleSlide from "@/components/slides/title-slide"
 import WhyTestSlide from "@/components/slides/why-test-slide"
 import TestingPyramidSlide from "@/components/slides/testing-pyramid-slide"
+import AAAPatternSlide from "@/components/slides/aaa-pattern-slide"
 import UnitTestSlide from "@/components/slides/unit-test-slide"
 import IntegrationTestSlide from "@/components/slides/integration-test-slide"
 import E2ETestSlide from "@/components/slides/e2e-test-slide"
@@ -17,13 +18,14 @@ const slides = [
   { id: 0, component: TitleSlide },
   { id: 1, component: WhyTestSlide },
   { id: 2, component: TestingPyramidSlide },
-  { id: 3, component: UnitTestSlide },
-  { id: 4, component: IntegrationTestSlide },
-  { id: 5, component: E2ETestSlide },
-  { id: 6, component: MaestroSlide },
-  { id: 7, component: QuizSlide },
-  { id: 8, component: LabSlide },
-  { id: 9, component: ResourcesSlide },
+  { id: 3, component: AAAPatternSlide },
+  { id: 4, component: UnitTestSlide },
+  { id: 5, component: IntegrationTestSlide },
+  { id: 6, component: E2ETestSlide },
+  { id: 7, component: MaestroSlide },
+  { id: 8, component: QuizSlide },
+  { id: 9, component: LabSlide },
+  { id: 10, component: ResourcesSlide },
 ]
 
 export default function Presentation() {

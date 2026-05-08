@@ -31,15 +31,14 @@ import { Greeting } from '../components/Greeting';
 
 describe('Greeting', () => {
   it('shows greeting when button is pressed', () => {
+    // 1. Arrange
     render(<Greeting />);
     
-    // Type name
+    // 2. Act
     fireEvent.changeText(screen.getByTestId('name-input'), 'Alice');
-    
-    // Press button
     fireEvent.press(screen.getByTestId('greet-btn'));
     
-    // Check greeting appears
+    // 3. Assert
     expect(screen.getByTestId('greeting')).toHaveTextContent('Hello, Alice!');
   });
 });`
@@ -54,7 +53,7 @@ export default function IntegrationTestSlide() {
           Integration Tests
         </h2>
         <p className="text-white/50 text-lg mb-8">
-          Test how components work together with React Native Testing Library
+          Verify how multiple units (components, hooks, state) work together.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4">
@@ -87,12 +86,19 @@ export default function IntegrationTestSlide() {
           </div>
         </div>
 
-        <div className="mt-8 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-          <p className="text-blue-400 font-medium mb-1">Key Point: testID</p>
-          <p className="text-white/60 text-sm">
-            Use <code className="bg-white/10 px-1.5 py-0.5 rounded">testID</code> prop to target elements in tests. 
-            This is the React Native equivalent of <code className="bg-white/10 px-1.5 py-0.5 rounded">data-testid</code>.
-          </p>
+        <div className="mt-8 grid md:grid-cols-2 gap-4">
+          <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+            <p className="text-blue-400 font-medium mb-1">Testing Interactions</p>
+            <p className="text-white/60 text-sm">
+              We test if clicking a button updates the state and shows the correct UI. This gives us confidence in our UI logic.
+            </p>
+          </div>
+          <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-lg">
+            <p className="text-emerald-400 font-medium mb-1">Key Tool: testID</p>
+            <p className="text-white/60 text-sm">
+              Use <code className="bg-white/10 px-1.5 py-0.5 rounded">testID</code> to target elements reliably without relying on text content that might change.
+            </p>
+          </div>
         </div>
       </div>
     </div>

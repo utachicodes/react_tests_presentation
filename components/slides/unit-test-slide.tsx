@@ -18,17 +18,31 @@ import { colorForDueDate } from '../utils/colorForDueDate';
 
 describe('colorForDueDate', () => {
   it('returns red for past dates', () => {
-    expect(colorForDueDate('2020-01-01')).toBe('red');
+    // Arrange & Act
+    const result = colorForDueDate('2020-01-01');
+    
+    // Assert
+    expect(result).toBe('red');
   });
 
   it('returns orange for dates within 24h', () => {
+    // Arrange
     const soon = new Date();
     soon.setHours(soon.getHours() + 12);
-    expect(colorForDueDate(soon.toISOString())).toBe('orange');
+    
+    // Act
+    const result = colorForDueDate(soon.toISOString());
+    
+    // Assert
+    expect(result).toBe('orange');
   });
 
   it('returns green for future dates', () => {
-    expect(colorForDueDate('2030-01-01')).toBe('green');
+    // Arrange & Act
+    const result = colorForDueDate('2030-01-01');
+    
+    // Assert
+    expect(result).toBe('green');
   });
 });`
 
@@ -43,22 +57,22 @@ export default function UnitTestSlide() {
           Unit Tests
         </h2>
         <p className="text-white/50 text-lg mb-8">
-          Test individual functions in isolation with Jest
+          Focus on testing individual functions or logic in complete isolation.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="md:col-span-1 space-y-3">
             <div className="p-4 bg-white/5 border border-white/10 rounded-lg">
-              <p className="text-emerald-400 font-medium">Fast</p>
-              <p className="text-white/50 text-sm">Run in milliseconds</p>
+              <p className="text-emerald-400 font-medium">Granular</p>
+              <p className="text-white/50 text-sm">Tests logic, not UI. Perfect for utility functions, hooks, and calculations.</p>
             </div>
             <div className="p-4 bg-white/5 border border-white/10 rounded-lg">
-              <p className="text-emerald-400 font-medium">Isolated</p>
-              <p className="text-white/50 text-sm">No external deps</p>
+              <p className="text-emerald-400 font-medium">Blazing Fast</p>
+              <p className="text-white/50 text-sm">Run thousands of tests in seconds. Instant feedback loop.</p>
             </div>
             <div className="p-4 bg-white/5 border border-white/10 rounded-lg">
-              <p className="text-emerald-400 font-medium">Deterministic</p>
-              <p className="text-white/50 text-sm">Same input = same output</p>
+              <p className="text-emerald-400 font-medium">Cheap</p>
+              <p className="text-white/50 text-sm">Easy to write, easy to maintain, and rarely flaky.</p>
             </div>
           </div>
 
